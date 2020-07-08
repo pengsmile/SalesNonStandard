@@ -1,0 +1,50 @@
+.clinicbox .ant-drawer-wrapper-body .ant-drawer-body {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+.clinicbox .ant-drawer-wrapper-body .ant-drawer-body .ant-spin-nested-loading {
+  flex-grow: 1;
+  overflow: auto;
+}
+.clinicbox .ant-drawer-wrapper-body .ant-drawer-body .ant-spin-container {
+  overflow: auto;
+  height: 100%;
+}
+.clinicbox .ant-drawer-wrapper-body .ant-drawer-body .container {
+  flex: auto;
+  flex-basis: 0%;
+  overflow: auto;
+  padding-top: 10px;
+}
+.clinicbox .ant-drawer-wrapper-body .ant-drawer-body .container ul {
+  padding: 0;
+}
+.clinicbox .ant-drawer-wrapper-body .ant-drawer-body .container ul li {
+  list-style: none;
+  padding: 5px;
+  margin-bottom: 10px;
+  margin-right: 10px;
+}
+.clinicbox .ant-drawer-wrapper-body .ant-drawer-body .item {
+  cursor: pointer;
+}
+.clinicbox .ant-drawer-wrapper-body .ant-drawer-body .item:hover {
+  background: #f9f9f9;
+}
+.clinicbox .ant-drawer-wrapper-body .ant-drawer-body .item:active {
+  background: #ccc;
+}
+.clinicbox .ant-drawer-wrapper-body .ant-drawer-body .item h4 {
+  font-weight: bold;
+  font-size: 16px;
+}
+.clinicbox .ant-drawer-wrapper-body .ant-drawer-body .item .ant-list-item-meta-description {
+  font-size: 16px;
+  font-weight: 500;
+}
+.clinicbox .ant-drawer-wrapper-body .money {
+  font-weight: bold;
+  font-size: 16px;
+}

@@ -1,0 +1,73 @@
+[
+    {
+      "key":"view",
+      "name":"销售非标",
+      "abbr":"index",
+      "before_render":[{
+        "render_key": "code_json",
+        "call_func": {
+          "dll_name": "WorkWeixin",
+          "cls_name": "",
+          "func_name": "verify_code",
+          "create_session_name": "WW_USERID",
+          "code": "$request_code"
+        }
+     }],
+      "back_html":"SalesNonStandard/index.html",
+      "output":{
+          "content_type": "html", 
+          "redirect_url": "",
+          "html": "~/Template/SalesNonStandard/index.html",
+          "root": "",
+          "has_cache": false,
+          "has_validate": false,
+          "output_keys": [ ]
+      }
+    },
+  {
+    "key": "demo1",
+    "name": "测试模板",
+    "abbr": "demo1",
+    "before_render": [
+      {
+        "render_key": "code_json",
+        "call_func": {
+
+          "dll_name": "WorkWeixin",
+          "cls_name": "",
+          "func_name": "verify_code",
+          "create_session_name": "WW_USERID",
+          "code": "$request_code"
+        }
+     }],
+    "output": {
+      "content_type": "html",
+      "redirect_url": "",
+      "html": "~/Template/html/demo1.html",
+      "root": "",
+      "has_cache": true
+    }
+  },
+  {
+    "key": "post",
+    "name": "一般提交",
+    "abbr": "post",
+    "method": "POST",
+    "before_render": [
+      {
+        "render_key": "sql",
+        "sql_params": {
+          "EHUSER": "$session_WW_USERID"
+        }
+      }
+    ],
+    "output": {
+      "content_type": "json",
+      "redirect_url": "",
+      "html": "",
+      "root": "",
+      "has_cache": false,
+      "HAS_CRSF_DEFENSE":"N"
+    }
+  }
+]

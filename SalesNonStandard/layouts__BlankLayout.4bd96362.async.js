@@ -1,0 +1,1 @@
+(window["webpackJsonp"]=window["webpackJsonp"]||[]).push([[5],{"/0C6":function(n,e,t){n.exports={RootContainer:"RootContainer___2N0PH"}},"Sx/Y":function(n,e,t){"use strict";t.r(e);var a=t("q1tI"),o=t.n(a),r=t("/0C6"),i=t.n(r),c=function(n){var e=n.children;return o.a.createElement(o.a.Fragment,null,o.a.createElement("div",{className:i.a.RootContainer},e))};e["default"]=c}}]);
